@@ -14,16 +14,18 @@ const useStyles = makeStyles((theme) => ({
         ? 'bold'
         : 'inherit',
     backgroundColor: (props) =>
-      props.type !== 'card' ? 'hsla(0,0%,100%,.24)' : 'inherit',
+      props.type !== 'card' ? 'hsla(0,0%,100%,.7)' : 'inherit',
     '&:hover': {
       opacity: 1,
-      backgroundColor: 'rgba(9,30,66,.08)',
+      backgroundColor: 'rgba(9,30,66,.5)',
+      color: 'white',
     },
-    textShadow: (props) =>
+    /* textShadow: (props) =>
       !props.noshadow &&
       (props.type === 'menu' || props.type === 'list') &&
-      '2px 2px black',
+      '2px 2px black', */
   },
+
   width: (props) => ({
     width: props.width,
     color: props.color,

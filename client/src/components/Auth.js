@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(2),
     padding: theme.spacing(1),
     marginRight: '90px',
-    marginLeft: '55px',
+    marginLeft: '30px',
     backgroundColor: 'hsla(0,0%,100%,.24)',
     border: '2px solid #DFE1E6',
     borderRadius: 3,
@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     width: '100px',
     padding: theme.spacing(0.8),
-    margin: theme.spacing(2, 2, 7, 2),
+    margin: theme.spacing(2, 2, 10, 2),
     '&:hover': {
       opacity: 1.6,
     },

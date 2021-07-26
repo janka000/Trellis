@@ -464,7 +464,7 @@ export default function Board() {
                         type="list"
                         icon={<AddIcon />}
                         width="256px"
-                        color="white"
+                        color="black"
                       />
                     )}
                     {addListFlag && (

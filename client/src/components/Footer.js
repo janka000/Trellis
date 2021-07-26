@@ -17,8 +17,9 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 export default function Footer() {
-  const classes = useStyles()
-  return (
+  // const classes = useStyles()
+  return <div></div>
+  /* return (
     <div
       style={{
         position: 'fixed',
@@ -35,7 +36,7 @@ export default function Footer() {
         fontFamily: 'Helvetica',
       }}
     >
-      <div style={{ paddingLeft: '10px', color: '#414141' }}>
+     <div style={{ paddingLeft: '10px', color: '#414141' }}>
         Developed by -
         <a
           href="https://ayushaggarwal.com"
@@ -62,5 +63,5 @@ export default function Footer() {
         </a>
       </div>
     </div>
-  )
+  ) */
 }

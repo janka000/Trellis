@@ -66,7 +66,7 @@ export default function SideMenu({ setBackground, board }) {
           icon={<MoreHorizIcon />}
           type="menu"
           width="123px"
-          color="white"
+          color="black"
         />
       </div>
       {!showBackground && (

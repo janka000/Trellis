@@ -12,17 +12,21 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     fontWeight: 'bold',
-    color: 'white',
-    textShadow: '2px 2px #000000',
-    padding: theme.spacing(0.7, 0.7, 0.7, 0.7),
-    margin: theme.spacing(0.7, 0.7, 0.7, 0.7),
+    color: 'black',
+    /* textShadow: '2px 2px #000000', */
+    /* padding: theme.spacing(0.7, 10, 0.7, 10), */
+    padding: theme.spacing(1, 1, 1, 1),
+    margin: theme.spacing(4.5, 0.7, 0.7, 1),
     fontFamily: 'sans-serif',
+    backgroundColor: 'hsla(0,0%,100%,1)',
+    borderRadius: 4,
     fontSize: '20px',
-    marginTop: theme.spacing(4.5),
+    /* marginTop: theme.spacing(4.5), */
     '&:hover': {
       opacity: 1,
-      backgroundColor: 'hsla(0,0%,100%,.24)',
+      backgroundColor: 'hsla(0,100%,0%,.3)',
       borderRadius: 4,
+      color: 'white',
       // opacity: 0.5
     },
   },

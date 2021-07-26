@@ -8,7 +8,7 @@ import AddItem from './AddItem'
 
 const useStyles = makeStyles((theme) => ({
   header: {
-    padding: theme.spacing(0.3, 0.3, 0.3, 0.3),
+    padding: theme.spacing(1, 1, 1.5, 1),
     marginBottom: theme.spacing(1),
     backgroundColor: (props) =>
       props.loggedIn ? 'hsla(0,0%,100%,.24)' : 'rgba(0,0,0,.32)',
@@ -23,8 +23,8 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 1,
   },
   trellis: {
-    color: 'black',
-    textShadow: '2px 2px white',
+    color: 'white',
+    // textShadow: '2px 2px white',
     zIndex: 100,
     opacity: 0.7,
     display: 'inline-block',
@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
   },
   username: {
     width: '500px',
-    textShadow: '2px 2px white',
+    // textShadow: '2px 2px white',
     height: '30px',
     position: 'fixed',
     fontFamily: 'Pacifico',
@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
     overflowX: 'hidden',
     overflowY: 'hidden',
     fontWeight: 'bold',
-    color: 'black',
+    color: 'white',
     textAlign: 'right',
     right: 110,
     '@media (max-width: 768px)': {
@@ -81,7 +81,7 @@ export default function Header({ loggedIn, btnText, path, icon }) {
               type="menu"
               icon={<ExitToAppIcon fontSize="small" />}
               width="85px"
-              color="white"
+              color="black"
               handleClick={() => {
                 dispatch(logoutUser())
                 localStorage.setItem('auth-token', '')
@@ -98,12 +98,12 @@ export default function Header({ loggedIn, btnText, path, icon }) {
               btnText={btnText}
               type="menu"
               icon={icon}
-              width="85px"
-              color="white"
+              width="100px"
               handleClick={() => {
                 history.push(`${path}`)
               }}
               noshadow
+              color="black"
             />
           </div>
         </div>
